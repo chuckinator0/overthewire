@@ -1,0 +1,3 @@
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+This was an interesting one. There was a cronjob in /etc/cron.d/ by user bandit24 that executes and deletes scripts in /var/spool/bandit24/ . The password for bandit24 is in /etc/bandit_pass/bandit24, but we don't have permission to access it. So we write a bash script to cat the contents to a file, and we cp that script in /var/spool/bandit24/ so it will be executed on cron. Wait a minute and the password shows up in the file indicated in the script.

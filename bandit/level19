@@ -1,0 +1,4 @@
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+`ssh -t <user>@<host> '<command>'` allows us to execute the command and get the output without keeping
+a session open on the remote host. 

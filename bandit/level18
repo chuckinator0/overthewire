@@ -1,0 +1,7 @@
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+By the way, the `nc` command is a great swiss army knife for network/port information.
+It stands for "netcat." You can scan ports to find what ports a server is listening on with the `-z` option, for example.
+
+For ssl (secure socket layer), the `openssl` command is great. For example,
+`openssl s_client -connect localhost:10000` will connect to port 10000 on the local machine through ssl.

@@ -1,0 +1,9 @@
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+echo "<old password>" | nc -l -p 60000 &
+The above  command echoes the bandit20 password into netcat,
+which serves the message on port 60000 and goes in the background.
+Then, `./suconnect 60000` reads the message on that port and gives the
+password to bandit21.
+
+NOTE: MacOS netcat doesn't use the -p flag, which made this a bit of a pain in the butt.
